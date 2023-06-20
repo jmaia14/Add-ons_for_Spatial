@@ -17,6 +17,7 @@ from bpy.types import PropertyGroup, Panel, Operator
 class Properties(PropertyGroup):
     
     x_axis: bpy.props.BoolProperty(name="X Axis", default=False)
+    neg_x_axis: bpy.props.BoolProperty(name="X Axis", default=False)
     y_axis: bpy.props.BoolProperty(name="Y Axis", default=False)
     z_axis: bpy.props.BoolProperty(name="Z Axis", default=False)
     speed: bpy.props.IntProperty(name="Speed", default=100)
@@ -58,7 +59,7 @@ class ANIMATION_OT_Operator(Operator):
             bpy.data.objects['Active'].keyframe_insert(data_path="rotation_euler", frame=1)
             bpy.ops.transform.rotate(value=math.pi, orient_axis='X')
             bpy.data.objects['Active'].keyframe_insert(data_path="rotation_euler", frame=s)
-                
+         
         if mytool.y_axis == True:
             bpy.data.objects['Active'].keyframe_insert(data_path="rotation_euler", frame=1)
             bpy.ops.transform.rotate(value=math.pi, orient_axis='Y')
