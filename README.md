@@ -2,6 +2,8 @@
 Add-ons to help the integration of Blender to the metaverse of Spatial
 
 Documentation:
+
+
 1- Hotspot Add-on:
 The purpose of this Add-on is to facilitate the creation of Hotspot, the seatable objects in Spatial.
 
