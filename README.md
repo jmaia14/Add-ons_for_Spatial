@@ -11,7 +11,7 @@ To use this Add-on you need to go to Edit>Preferences>Add-on and then install th
 
 Is important to note that a seatable spot will be where the sphere origin is located.
 
-One of the Add-on limitations is that you can’t make two or more Hotspot in the same scene. That happens because you can’t have two objects with the same name, and the name and hierarchy of the objects are needed so that the element Hotspot is created.
+One of the Add-on limitations is that you can’t make two or more Hotspot in the same scene. That happens because you can’t have two objects with the same name, and the name and hierarchy of the objects are needed so that the element Hotspot is created. In addition, it does not create any other elements necessary for creating the Hotspot after creating the first one.
 
 Once you’ve placed the Hotspot where you want, you can export the object, for example, using the Export Add-on also in this project. Is necessary to say that the Hotspot object only works with the .glb/gltf extension. .fbx and .obj doesn’t show the green mark on the object that allows the avatar to sit.
 
