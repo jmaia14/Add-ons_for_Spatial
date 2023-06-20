@@ -3,8 +3,8 @@ Add-ons to help the integration of Blender to the metaverse of Spatial
 
 Documentation:
 
-
 1- Hotspot Add-on:
+
 The purpose of this Add-on is to facilitate the creation of Hotspot, the seatable objects in Spatial.
 
 To use this Add-on you need to go to Edit>Preferences>Add-on and then install the Add-on into Blender. After the installation you should press the “N” key to show the sidebar with the panels. After you click on the Hotspot button in the sidebar it will open a panel in the 3D Viewport. The panel shows the button to create the Hotspot, and the options to set the location of the Hotspot. If you click on the button without changing the location, it will appear in the original location that matches the cube top when you create it on Blender. If you change the location of the Hotspot, it will move to the location you setted.
@@ -16,6 +16,7 @@ One of the Add-on limitations is that you can’t make two or more Hotspot in th
 Once you’ve placed the Hotspot where you want, you can export the object, for example, using the Export Add-on also in this project. Is necessary to say that the Hotspot object only works with the .glb/gltf extension. .fbx and .obj doesn’t show the green mark on the object that allows the avatar to sit.
 
  2- Export Add-on:
+ 
 This Add-on was created so that the user could export in a more easy and convenient way with the extensions that can be imported into Spatial metaverse. Is important to note that Spatial only supports files with the maximum size of 100mb. To help the user to realize that, in the Add-ons panel, is the 100mb reference so that the user will remember to be aware of this information.
 
 The usage is pretty simple, when you install this Add-on, by going into Edit>Preferences>Add-on, and after the installation, you will have to press the “N” key to show the sidebar that shows the panels. Once you have done it, the Export Add-on on this sidebar will be shown. By clicking on the button, a panel will appear in the 3D Viewport, with three options of buttons, which are the three extensions that Spatial supports to import into its metaverse: .fbx, .glb/.gltf and .obj. When pressing the button a window will be open and the user has the possibility to name the object and then save it wherever he likes in his machine.
