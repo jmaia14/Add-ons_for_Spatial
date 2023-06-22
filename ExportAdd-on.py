@@ -32,7 +32,7 @@ class EXPORT_PT_MainPanel(Panel):
 
 
 class EXPORT_OT_OBJ(Operator):
-    bl_label = "Export .obj(max.100mb)"
+    bl_label = "Export .obj"
     bl_idname = "export.obj"
     
     def execute(self, context):
@@ -40,7 +40,7 @@ class EXPORT_OT_OBJ(Operator):
         return {'FINISHED'}
 
 class EXPORT_OT_GLTF(Operator):
-    bl_label = "Export .gltf/glb(max.100mb)"
+    bl_label = "Export .gltf/glb"
     bl_idname = "export.gltf"
     
     def execute(self, context):
@@ -48,7 +48,7 @@ class EXPORT_OT_GLTF(Operator):
         return {'FINISHED'}
 
 class EXPORT_OT_FBX(Operator):
-    bl_label = "Export .fbx(max.100mb)"
+    bl_label = "Export .fbx"
     bl_idname = "export.fbx"
     
     def execute(self, context):
