@@ -14,7 +14,7 @@ import bpy
 
 from bpy.types import Panel, Operator, PropertyGroup
 
-class Properties(PropertyGroup):
+class Hotspot_Properties(PropertyGroup):
     
     float_loc: bpy.props.FloatVectorProperty(name="Local", default= (0,0,0))
 
@@ -68,12 +68,12 @@ class HOTSPOT_OT_Operator(Operator):
            
         return {'FINISHED'}
     
-classes = [Properties, HOTSPOT_PT_Panel, HOTSPOT_OT_Operator]    
+classes = [Hotspot_Properties, HOTSPOT_PT_Panel, HOTSPOT_OT_Operator]    
 
 def register():
     for cls in classes:
         bpy.utils.register_class(cls)
-        bpy.types.Scene.my_tool = bpy.props.PointerProperty(type= Properties)
+        bpy.types.Scene.my_tool = bpy.props.PointerProperty(type= Hotspot_Properties)
 
 def unregister():
     for cls in classes:
