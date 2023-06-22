@@ -14,7 +14,7 @@ import math
 import bpy
 from bpy.types import PropertyGroup, Panel, Operator
 
-class Animation_Properties(PropertyGroup):
+class ANIMATION_Properties(PropertyGroup):
     
     x_axis: bpy.props.BoolProperty(name="X Axis", default=False)
     neg_x_axis: bpy.props.BoolProperty(name="X Axis", default=False)
@@ -74,12 +74,12 @@ class ANIMATION_OT_Operator(Operator):
     
 
 
-classes = [Animation_Properties, ANIMATION_PT_Panel, ANIMATION_OT_Operator]
+classes = [ANIMATION_Properties, ANIMATION_PT_Panel, ANIMATION_OT_Operator]
 
 def register():
     for cls in classes:
         bpy.utils.register_class(cls)
-        bpy.types.Scene.my_tool = bpy.props.PointerProperty(type= Animation_Properties)
+        bpy.types.Scene.my_tool = bpy.props.PointerProperty(type= ANIMATION_Properties)
         
 def unregister():
     for cls in classes:
